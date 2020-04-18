@@ -13,9 +13,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        Auth.auth().signInAnonymously { (user, error) in
-        }
-        
+
         Auth.auth().addStateDidChangeListener { (auth, user) in
             if user != nil {
                 print("己登入")

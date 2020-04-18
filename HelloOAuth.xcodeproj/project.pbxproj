@@ -106,6 +106,7 @@
 				BAA1F145244AADAA00EAC4F1 /* Frameworks */,
 				BAA1F146244AADAA00EAC4F1 /* Resources */,
 				42774CDD1612AA865E47B298 /* [CP] Embed Pods Frameworks */,
+				9B2A1D871D227C933BEC7EE4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,6 +180,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloOAuth/Pods-HelloOAuth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B2A1D871D227C933BEC7EE4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloOAuth/Pods-HelloOAuth-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloOAuth/Pods-HelloOAuth-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloOAuth/Pods-HelloOAuth-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A325588148249BBAAF041126 /* [CP] Check Pods Manifest.lock */ = {
