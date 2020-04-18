@@ -7,12 +7,22 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        Auth.auth().signInAnonymously { (user, error) in
+        }
+        
+        Auth.auth().addStateDidChangeListener { (auth, user) in
+            if user != nil {
+                print("己登入")
+            }else{
+                print("己登出")
+            }
+        }
     }
 
 

@@ -3,19 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6853F6DA21A10AAE9D6B97BE /* Pods_HelloOAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B860AE9DDE7F3DB0BBF353F4 /* Pods_HelloOAuth.framework */; };
 		BAA1F14C244AADAA00EAC4F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA1F14B244AADAA00EAC4F1 /* AppDelegate.swift */; };
 		BAA1F14E244AADAA00EAC4F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA1F14D244AADAA00EAC4F1 /* SceneDelegate.swift */; };
 		BAA1F150244AADAA00EAC4F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA1F14F244AADAA00EAC4F1 /* ViewController.swift */; };
 		BAA1F153244AADAA00EAC4F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA1F151244AADAA00EAC4F1 /* Main.storyboard */; };
 		BAA1F155244AADAC00EAC4F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA1F154244AADAC00EAC4F1 /* Assets.xcassets */; };
 		BAA1F158244AADAC00EAC4F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA1F156244AADAC00EAC4F1 /* LaunchScreen.storyboard */; };
+		BAA1F164244AB05000EAC4F1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAA1F163244AB05000EAC4F1 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F0A04CD2454193ADCF28BD5 /* Pods-HelloOAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloOAuth.debug.xcconfig"; path = "Target Support Files/Pods-HelloOAuth/Pods-HelloOAuth.debug.xcconfig"; sourceTree = "<group>"; };
+		B860AE9DDE7F3DB0BBF353F4 /* Pods_HelloOAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloOAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA1F148244AADAA00EAC4F1 /* HelloOAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloOAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA1F14B244AADAA00EAC4F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAA1F14D244AADAA00EAC4F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		BAA1F154244AADAC00EAC4F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAA1F157244AADAC00EAC4F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAA1F159244AADAC00EAC4F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAA1F163244AB05000EAC4F1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F98AECF155D988BD7EF875EA /* Pods-HelloOAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloOAuth.release.xcconfig"; path = "Target Support Files/Pods-HelloOAuth/Pods-HelloOAuth.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6853F6DA21A10AAE9D6B97BE /* Pods_HelloOAuth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6AF9D0E70D3BF556D86D45C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F0A04CD2454193ADCF28BD5 /* Pods-HelloOAuth.debug.xcconfig */,
+				F98AECF155D988BD7EF875EA /* Pods-HelloOAuth.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		77BDB2CCB9F469094638ACD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B860AE9DDE7F3DB0BBF353F4 /* Pods_HelloOAuth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BAA1F13F244AADAA00EAC4F1 = {
 			isa = PBXGroup;
 			children = (
 				BAA1F14A244AADAA00EAC4F1 /* HelloOAuth */,
 				BAA1F149244AADAA00EAC4F1 /* Products */,
+				6AF9D0E70D3BF556D86D45C4 /* Pods */,
+				77BDB2CCB9F469094638ACD9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +89,7 @@
 				BAA1F154244AADAC00EAC4F1 /* Assets.xcassets */,
 				BAA1F156244AADAC00EAC4F1 /* LaunchScreen.storyboard */,
 				BAA1F159244AADAC00EAC4F1 /* Info.plist */,
+				BAA1F163244AB05000EAC4F1 /* GoogleService-Info.plist */,
 			);
 			path = HelloOAuth;
 			sourceTree = "<group>";
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAA1F15C244AADAC00EAC4F1 /* Build configuration list for PBXNativeTarget "HelloOAuth" */;
 			buildPhases = (
+				A325588148249BBAAF041126 /* [CP] Check Pods Manifest.lock */,
 				BAA1F144244AADAA00EAC4F1 /* Sources */,
 				BAA1F145244AADAA00EAC4F1 /* Frameworks */,
 				BAA1F146244AADAA00EAC4F1 /* Resources */,
+				42774CDD1612AA865E47B298 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +155,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAA1F158244AADAC00EAC4F1 /* LaunchScreen.storyboard in Resources */,
+				BAA1F164244AB05000EAC4F1 /* GoogleService-Info.plist in Resources */,
 				BAA1F155244AADAC00EAC4F1 /* Assets.xcassets in Resources */,
 				BAA1F153244AADAA00EAC4F1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42774CDD1612AA865E47B298 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloOAuth/Pods-HelloOAuth-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloOAuth/Pods-HelloOAuth-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloOAuth/Pods-HelloOAuth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A325588148249BBAAF041126 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloOAuth-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BAA1F144244AADAA00EAC4F1 /* Sources */ = {
@@ -282,6 +354,7 @@
 		};
 		BAA1F15D244AADAC00EAC4F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F0A04CD2454193ADCF28BD5 /* Pods-HelloOAuth.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +373,7 @@
 		};
 		BAA1F15E244AADAC00EAC4F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F98AECF155D988BD7EF875EA /* Pods-HelloOAuth.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
