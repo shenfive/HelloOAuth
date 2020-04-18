@@ -8,12 +8,18 @@
 
 import UIKit
 import FirebaseAuth
+import GoogleSignIn
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var googleSignBtn: GIDSignInButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+        GIDSignIn.sharedInstance().signIn()
+        
+        
         Auth.auth().addStateDidChangeListener { (auth, user) in
             if user != nil {
                 print("己登入")
