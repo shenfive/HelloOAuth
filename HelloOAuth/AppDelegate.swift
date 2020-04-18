@@ -13,15 +13,20 @@ import GoogleSignIn
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
+        print("Google Sign In finished")
+        
         // ...
         if let error = error {
-            // ...
             return
         }
         
         guard let authentication = user.authentication else { return }
-        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
-                                                       accessToken: authentication.accessToken)
+        let credential = GoogleAuthProvider
+            .credential(withIDToken: authentication.idToken,
+                        accessToken: authentication.accessToken)
+        Auth.auth().signIn(with: credential) { (auth, error) in
+            
+        }
         // ...
     }
     

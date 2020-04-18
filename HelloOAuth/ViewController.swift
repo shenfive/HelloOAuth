@@ -29,6 +29,16 @@ class ViewController: UIViewController {
         }
     }
 
-
+    @IBAction func signOut(_ sender: Any) {
+        do {
+            try Auth.auth().signOut()
+        } catch  {
+            print("登出失敗")
+        }
+        
+        
+        
+    }
+    
 }
 
